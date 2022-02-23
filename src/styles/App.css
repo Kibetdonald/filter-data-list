@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 1.2rem;
+}
+
+.App {
+  padding: 0 5rem;
+}
+.venue {
+  color: red;
+  font-size: 0.7em;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin: 1rem 0;
+  /* color: rgb(58, 57, 57); */
+}
+
+h2:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #037fff;
+}
+
+p {
+  color: #8892b0;
+  font-size: 0.8em;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding-bottom: 6rem;
+}
+
+.item-container {
+  overflow: hidden;
+}
+
+.item-con {
+  width: 100%;
+  padding: 1.2rem 1.2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.item-container > img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-container > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.buttons {
+  width: 70%;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  background-color: #d1410c;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: white;
+  transition: all 0.4s cubic-bezier(1, -0.16, 0.6, 1.35);
+}
+
+.btn:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.btn:hover {
+  background-color: #037fff;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  border: none;
+  background-color: #037fff;
+}
